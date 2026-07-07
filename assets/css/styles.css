@@ -1,13 +1,111 @@
 /* styles.css */
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manufacturing+Consent&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+/* Body */
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #337CA0;
+    color: white;
+    margin: 0;
+    padding: 30px;
+}
 
+/* Main Container */
+.container {
+    background-color: white;
+    color: #333;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
 
+/* Headings */
+h1 {
+    font-family: "Roboto Slab", serif;
+    color: #337CA0;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manufacturing+Consent&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+h2 {
+    font-family: "Lato", sans-serif;
+    color: #24566F;
+    border-bottom: 2px solid #337CA0;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
 
-"background-color": $blue: #337CA0;
+h3 {
+    font-family: "Lato", sans-serif;
+    color: #3E7CB1;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Lists */
+ul {
+    background-color: #EAF4F8;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #24566F;
+    font-size: 18px;
+}
+
+/* Cards */
+.card {
+    background-color: #F8F9FA;
+    border: 2px solid #337CA0;
+    border-radius: 12px;
+    transition: transform .3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Button */
+.btn-primary {
+    background-color: #337CA0;
+    border-color: #337CA0;
+}
+
+.btn-primary:hover {
+    background-color: #24566F;
+    border-color: #24566F;
+}
+
+/* Links */
+a {
+    color: #337CA0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #24566F;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+    }
+}
